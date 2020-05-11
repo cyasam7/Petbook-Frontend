@@ -1,0 +1,40 @@
+@import './colors';
+
+.header{
+    display: flex;
+    height: 70px;
+    background: $primary;
+    justify-content: space-between;
+    align-items: center;
+    .header-img{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .header-menu{
+      display: flex;
+      list-style: none;
+      height: inherit;
+      .header-menu__item{
+        display: flex;
+        padding: 0 10px;
+        color: white;
+        height: inherit;
+        align-items: center;
+      }
+      .header-menu__item:hover{
+        background: $primary;
+      }
+    }
+  }
+  .container-align{
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+  }
