@@ -31,7 +31,7 @@ function Profile() {
           </div>
           <strong className="info-name">Alexander Serrano</strong>
           <p className="info-description">
-            I'm the whole damn cake and the cherry on top
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci enim architecto harum et. Voluptatum et, esse possimus, autem ex sit voluptas ea provident reiciendis quibusdam suscipit ullam excepturi placeat quaerat!
           </p>
         </div>
       </div>
@@ -47,6 +47,7 @@ function Profile() {
         <Post img={im2}/>
         <Post img={im3}/>
       </div>
+      
     </div>
   );
 }

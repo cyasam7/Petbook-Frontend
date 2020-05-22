@@ -1,0 +1,64 @@
+@import "colors";
+.list-postHome {
+    grid-area: post;
+    padding: 0 50px;
+    box-sizing: border-box;
+    height: 800px;
+  }
+  .post-home {
+    width: 100%;
+    border: 1px solid gray;
+    
+    margin-bottom: 15px;
+  }
+  .post-home__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    .post-home__header-img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .post-home__header-title {
+      color: $text;
+      margin: 0;
+      margin-left: 8px;
+    }
+  }
+  .post-home__body {
+    width: 100%;
+    margin-bottom: 7px;
+    
+    .post-home__img {
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+  .post-home__description{
+    padding: 5px;
+  }
+  .description-item {
+    
+    .description-item__button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      position: relative;
+      cursor: pointer;
+      &[badge]:after {
+        background: red;
+        border-radius: 30px;
+        color: #fff;
+        content: attr(badge);
+        font-size: 11px;
+        min-width: 12px;
+        padding: 2px;
+        position: absolute;
+        margin-top: -7px;
+      }
+    }
+  }
+  

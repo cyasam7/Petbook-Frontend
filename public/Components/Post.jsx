@@ -1,6 +1,7 @@
 import React from "react";
-import {AiFillHeart } from 'react-icons/ai'
-import {FaComment } from 'react-icons/fa'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faHeart} from '@fortawesome/free-solid-svg-icons'
+import {faComments} from '@fortawesome/free-solid-svg-icons'
 function Post({img}) {
   return (
     <div className="post">
@@ -9,11 +10,11 @@ function Post({img}) {
       </figure>
       <div className="post-hover">
         <div className="post-hover-icon">
-            <AiFillHeart/>
+            <FontAwesomeIcon icon={faHeart}/>
             <small>16</small>
         </div>
         <div className="post-hover-icon">
-            <FaComment/>
+            <FontAwesomeIcon icon={faComments}/>
             <small>2</small>
         </div>
       </div>
