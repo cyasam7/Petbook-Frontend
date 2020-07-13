@@ -44,15 +44,13 @@ function PostHome() {
       </figure>
       <div className="post-home__description">
         <span className="description-item">
-          <button className="description-item__button">
+          <button className="description-item__button" badge="9">
             {HeartIcon}
           </button>
         </span>
         <span className="description-item">
           <button className="description-item__button" onClick={handleOpenModal} badge="9">
             <BsChatSquare size="32px" />
-            {console.log(Modal)
-            }
           </button>
         </span>
       </div>

@@ -18,20 +18,35 @@ figure {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: 1fr 300px;
-  grid-template-areas: "post friends ";
-  border: 1px solid green;
+  grid-template-areas: "post users ";
 }
 .container-post {
-  border: 1px solid blue;
   height: auto;
 }
 .container-friends {
   border: 1px solid pink;
+  grid-area: users;
 }
 
 .container-newPost {
-  padding: 0 50px;
+  padding: 5px 50px;
   margin-bottom: 20px;
+  border-radius: 5px;
+
+  .labelNewPost{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .inputNewPos{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+  }
 }
 
 .newPost-input {
@@ -61,6 +76,7 @@ figure {
     background-color: transparent;
     width: 100%;
     height: 100%;
+    
   }
   
 }
@@ -71,4 +87,7 @@ figure {
   margin: 0;
   padding: 8px;
   color: white;
+  border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
+

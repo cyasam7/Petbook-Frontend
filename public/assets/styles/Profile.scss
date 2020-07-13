@@ -5,11 +5,13 @@
 
   .hero-profile {
     display: flex;
+    position: relative;
+    justify-content: space-around;
     width: 100%;
     padding: 15px;
-    color:  #3a3a3a;;
+    flex-wrap: wrap;
+    color: #3a3a3a;
     .hero-profile__figure {
-      width: 40%;
       height: 150px;
       padding: 8px;
       display: flex;
@@ -22,55 +24,55 @@
         object-fit: cover;
       }
     }
-    .hero-profile__info{
-        width: 60%;
-        h1{
-            font-weight: 400;
-            margin: 0;
-            margin-bottom: 15px;
+    .hero-profile__info {
+      width: 60%;
+      h1 {
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      .info-suscription {
+        margin: 0;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        .info-suscription__item {
+          margin-right: 25px;
+          strong {
+            margin-right: 4px;
+          }
         }
-        .info-suscription{
-            margin:0;
-            margin-bottom: 15px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            .info-suscription__item{
-                margin-right: 25px;
-                strong{
-                    margin-right: 4px;
-                }
-            }
-        }
-        
-        .info-description{
-            margin: 0;
-            margin-top: 7px;
-        }
+      }
+
+      .info-description {
+        margin: 0;
+        margin-top: 7px;
+      }
     }
   }
 }
 
-.grid-post{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+.grid-post {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
-.post{
+.post {
   position: relative;
   display: block;
   border-radius: 10px;
   cursor: pointer;
-  .post-image{
+  .post-image {
     margin: 0;
-    img{
+    img {
       width: 100%;
       vertical-align: top;
       border-radius: 3px;
     }
   }
-  .post-hover{
-    background: rgba(0, 0, 0, .4);
+  .post-hover {
+    background: rgba(0, 0, 0, 0.4);
     position: absolute;
     left: 0;
     right: 0;
@@ -80,29 +82,41 @@
     align-items: center;
     justify-content: center;
     color: white;
-    
-    .post-hover-icon{
+
+    .post-hover-icon {
       display: flex;
       margin-right: 10px;
       align-items: center;
       justify-content: space-between;
-      small{
+      small {
         font-weight: bold;
         font-size: 1em;
         margin-left: 2px;
       }
     }
-
   }
-  &:hover{
+  &:hover {
     display: flex;
-    .post-hover{
+    .post-hover {
       display: flex;
     }
   }
-
 }
 
-.hr-profile{
+.hr-profile {
   margin-bottom: 25px;
+}
+.hero-profile__edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+}
+.hero-profile__icon{
+  color: gray;
+}
+.hero-profile__icon:hover{
+  border-radius: 5px;
+  color: white;
+  background: gray;
 }

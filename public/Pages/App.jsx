@@ -4,6 +4,7 @@ import Login from "./Login";
 import Register from "./Register";
 import Home from "./Home";
 import Profile from "./Profile";
+import EditProfile from "./EditProfile";
 import Header from "../Components/Header";
 class App extends Component {
   render() {
@@ -14,8 +15,8 @@ class App extends Component {
           <Route exact path="/register" component={Register} />
           <Header>
             <Route exact path="/home" component={Home} />
-            <Route exact path="/profile" component={Profile} />
-            <Route exact path="/home/post/:id" component={Register} />
+            <Route exact path="/profile/" component={Profile} />{/* LLEva id */}
+            <Route exact path="/edit/" component={EditProfile} />{/* Lleva id */}
           </Header>
         </Switch>
       </BrowserRouter>

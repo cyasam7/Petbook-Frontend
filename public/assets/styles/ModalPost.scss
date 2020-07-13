@@ -1,0 +1,89 @@
+.Modal-Post__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  .Modal-Post__image {
+    background-color: rgb(199, 198, 198);
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+      width: 100%;
+    }
+  }
+  .Modal-Post__comentarios {
+    width: 40%;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    
+    .Modal-Post__header {
+      display: flex;
+      align-items: center;
+      .Post-image {
+        width: 35px;
+        height: 35px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      .Post-name {
+        margin-left: 10px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.comentarioNewPost{
+    width: 100%;
+    background-color: rgb(223, 223, 223);
+    margin: 5px 15px;
+    border-radius: 5px;
+    .Comentario_header{
+        display: flex;
+        margin-left: 15px;
+        padding-top: 5px;
+        align-items: center;
+        figure{
+            width: 35px;
+            height: 35px;
+            img{
+                width: 100%;
+                height: 100%;   
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+        p{
+          margin-left: 5px;
+        }
+    }
+    .cometario-comentario{
+        padding: 10px 15px;
+        margin: 0
+    }
+}
+.comentarios-input{
+    display: flex;
+    width: 100%;
+    .comentarios-input__text{
+        width: 75%;
+        padding: 15px;   
+        font-size: 16px;
+        
+    }
+    .comentarios-input__button{
+        width: 35%;
+        padding: 12px;
+    }
+}
+
+.carousel-newPost{
+  flex: 1;
+  overflow: scroll;
+}

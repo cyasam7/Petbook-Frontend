@@ -1,0 +1,46 @@
+@import "./colors.scss";
+
+.container-EditProfile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form-editProfile{
+        width: 500px;
+        background: $primaryLightC;
+        box-sizing: border-box;
+        padding: 25px;
+        label{
+            font-size: 18px;
+            color: white;
+        }
+        input{
+            margin: 5px 0;
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 1px 2px transparent;
+            outline: none;
+        }
+        textarea{
+            display: block;
+            margin: 5px 0;
+            width: 100%;
+            font-size: 16px;
+        }
+        button{
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: white;
+            background: $primaryLight;
+            border: none;
+            border-radius: 5px;
+            &:hover{
+                background: $primaryDarkC;
+            }
+        }
+        
+    }
+}

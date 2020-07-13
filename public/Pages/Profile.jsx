@@ -1,15 +1,19 @@
 import React from "react";
 import "../assets/styles/Profile.scss";
 import Post from '../Components/Post'
-import CoverPhoto from "../assets/static/fondo-login.jpg";
 import me from "../assets/static/me.jpg";
 import im1 from "../assets/static/compu.jpg";
 import im2 from "../assets/static/compu2.jpg";
 import im3 from "../assets/static/compu3.jpg";
+import {MdEdit} from 'react-icons/md'
+import { Link } from "react-router-dom";
 function Profile() {
   return (
     <div className="container-profile">
       <div className="hero-profile">
+        <Link to="/edit/" className="hero-profile__edit">
+          <MdEdit className="hero-profile__icon" size="1.5em"/>
+        </Link>
         <figure className="hero-profile__figure">
           <img src={me} alt="" />
         </figure>

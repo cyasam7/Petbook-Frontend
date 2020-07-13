@@ -3,6 +3,8 @@ import PostHome from "../Components/PostHome";
 import ModalPost from "../Components/ModalPost";
 import ListPost from "../Components/ListPost";
 import NewPost from "../Components/NewPost";
+import ListUsers from "../Components/ListUser";
+import User from "../Components/User";
 
 function Home() {
   return (
@@ -16,9 +18,14 @@ function Home() {
           <PostHome />
         </ListPost>
       </div>
-      
       <div className="container-friends">
-        
+          <ListUsers>
+            <User/>
+            <User/>
+            <User/>
+            <User/>
+            <User/>
+          </ListUsers>
       </div>
     </div>
   );
